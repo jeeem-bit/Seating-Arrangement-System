@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<h1>Seating Plan</h1>
+		<p>Seating Arrangement for Classgroup {{classgroupname}}</p>
+		<p>
+			<table border="1">
+				{%for row in rows%}
+				<tr>
+					<td>{{row[0]}}</td>
+					<td>{{row[1]}}</td>
+					<td>{{row[2]}}</td>
+					<td>{{row[3]}}</td>
+					<td>{{row[4]}}</td>
+				</tr>
+				{%endfor%}
+			</table>
+		</p>
+	</body>
+</html>
